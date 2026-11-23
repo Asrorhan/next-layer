@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Get a Quote"
+  },
+  "hero": {
+    "badge": "Web Development Agency",
+    "title1": "Custom Web Solutions for",
+    "title2": "Growing Businesses",
+    "subtitle": "We design and build modern, high-performance websites and web applications that help businesses attract customers, streamline operations, and grow online.",
+    "ctaPrimary": "Get a Quote",
+    "ctaSecondary": "Our Work",
+    "featuredBadge": "Featured SaaS Platform",
+    "liveDemo": "Live Demo",
+    "mockupTitle": "Restaurant Ordering System",
+    "mockupDesc": "QR menu ordering, real-time Kitchen Display System (KDS), and multi-tenant admin dashboard.",
+    "feat1Label": "QR Menu",
+    "feat1Val": "Instant Order",
+    "feat2Label": "Kitchen KDS",
+    "feat2Val": "Real-Time",
+    "feat3Label": "Admin Panel",
+    "feat3Val": "Full Control"
+  },
+  "trust": {
+    "t1": "Business-Focused Solutions",
+    "t2": "Modern & Scalable Technology",
+    "t3": "Clear Communication",
+    "t4": "Ongoing Support"
+  },
+  "services": {
+    "tag": "Services",
+    "homeTitle": "Our Services",
+    "homeSubtitle": "Web solutions tailored to your business needs.",
+    "pageTitle": "What We Do",
+    "pageSubtitle": "We create practical, modern, and scalable web solutions for small and medium-sized businesses.",
+    "learnMore": "Learn more",
+    "requestService": "Request this service",
+    "ctaTitle": "Not sure which solution fits your business?",
+    "ctaDesc": "Tell us about your current workflow and goals — we will recommend the cleanest, most cost-effective setup.",
+    "ctaBtn": "Get a Free Consultation",
+    "items": {
+      "web": {
+        "title": "Business Websites",
+        "desc": "Professional, fast, and mobile-friendly websites that represent your business and attract customers.",
+        "f1": "Custom Modern UI/UX",
+        "f2": "Mobile & Tablet Responsive",
+        "f3": "SEO & Speed Optimized"
+      },
+      "ecom": {
+        "title": "E-commerce Websites",
+        "desc": "Online stores with product management, secure payments, and a smooth shopping experience.",
+        "f1": "Product & Inventory Catalog",
+        "f2": "Card & Online Payments",
+        "f3": "Order Management Panel"
+      },
+      "booking": {
+        "title": "Booking Systems",
+        "desc": "Custom booking solutions for restaurants, services, events, and daily appointment scheduling.",
+        "f1": "Real-Time Availability",
+        "f2": "Automated Confirmations",
+        "f3": "Staff & Schedule Control"
+      },
+      "custom": {
+        "title": "Custom Web Applications",
+        "desc": "Tailored web apps, SaaS platforms, and internal dashboards to automate your business workflows.",
+        "f1": "QR Ordering & Kitchen KDS",
+        "f2": "Role-Based Admin Panels",
+        "f3": "API & Database Integration"
+      },
+      "redesign": {
+        "title": "Website Redesign",
+        "desc": "Give your existing website a modern look, better performance, and a smoother user experience.",
+        "f1": "UI/UX Modernization",
+        "f2": "Core Web Vitals Speedup",
+        "f3": "Mobile Experience Upgrade"
+      },
+      "support": {
+        "title": "Maintenance & Support",
+        "desc": "Keep your website secure, up to date, and running smoothly with ongoing technical assistance.",
+        "f1": "Security & Backups",
+        "f2": "Content & Feature Updates",
+        "f3": "Priority Bug Fixes"
+      }
+    }
+  },
+  "process": {
+    "tag": "Our Process",
+    "title": "A Clear and Simple Process",
+    "subtitle": "From your idea to a live, working solution — we keep the process transparent, efficient, and stress-free.",
+    "s1Title": "1. Discovery",
+    "s1Desc": "We discuss your goals, requirements, and business ideas.",
+    "s2Title": "2. Planning",
+    "s2Desc": "We define the scope, core features, and project timeline.",
+    "s3Title": "3. Design & Development",
+    "s3Desc": "We design, build, and regularly show you live progress.",
+    "s4Title": "4. Launch",
+    "s4Desc": "We test everything thoroughly and launch your solution.",
+    "s5Title": "5. Support",
+    "s5Desc": "We provide ongoing maintenance and help when you need it."
+  },
+  "portfolio": {
+    "tag": "Our Work",
+    "title": "Portfolio",
+    "subtitle": "A selection of real systems, web applications, and digital concepts built for growing businesses.",
+    "buildSimilar": "Build similar →",
+    "cats": {
+      "all": "All",
+      "websites": "Websites",
+      "apps": "Web Applications",
+      "ecom": "E-commerce",
+      "booking": "Booking"
+    }
+  },
+  "about": {
+    "tag": "About Us",
+    "title": "A Focused Studio with a Big Impact on Your Business",
+    "p1": "Next Layer is a Riga-based web development studio dedicated to creating practical, high-quality websites and custom web applications for small and medium-sized businesses.",
+    "p2": "We believe in clean design, reliable technology, and clear communication without unnecessary agency overhead. Whether you need a high-converting company website or a full restaurant ordering system, our goal is to turn your operational needs into a working digital solution.",
+    "cta": "Work With Us",
+    "cardTitle": "Built for Baltic & European Businesses",
+    "cardDesc": "Operating out of Riga, Latvia, we build multilingual platforms (English, Latvian, Russian) tailored to local market standards and modern user expectations.",
+    "locLabel": "Location",
+    "langLabel": "Languages",
+    "v1Title": "Business-Oriented",
+    "v1Desc": "Solutions designed to solve real operational bottlenecks, save staff time, and increase customer conversions.",
+    "v2Title": "Quality & Reliability",
+    "v2Desc": "Clean architecture, modern frameworks, and maintainable code built to scale smoothly as your company grows.",
+    "v3Title": "Long-Term Support",
+    "v3Desc": "We stay with you after launch — providing updates, hosting guidance, and continuous improvements."
+  },
+  "contact": {
+    "tag": "Contact Us",
+    "title": "Let's Build Something Together",
+    "subtitle": "Have a project in mind? Tell us about your business goals, and we will get back to you with a clear plan and quote.",
+    "emailLabel": "Email",
+    "locLabel": "Location",
+    "respLabel": "Response Time",
+    "respVal": "Usually within 1 business day",
+    "formTitle": "Send a Project Inquiry",
+    "nameLabel": "Your Name",
+    "emailInputLabel": "Email Address",
+    "typeLabel": "Project Type",
+    "typePlaceholder": "Select a service",
+    "detailsLabel": "Project Details",
+    "detailsPlaceholder": "Tell us about your project, goals, and any specific requirements...",
+    "submit": "Send Inquiry",
+    "successTitle": "Inquiry Received!",
+    "successDesc": "Thank you. We have received your project details and will reply within 1 business day.",
+    "sendAnother": "Send another message"
+  },
+  "footer": {
+    "tagline": "Custom web solutions, booking platforms, and digital systems built for growing businesses.",
+    "company": "Company",
+    "touch": "Get in Touch",
+    "rights": "All rights reserved.",
+    "studio": "Web Development & Digital Solutions Studio"
+  }
+}

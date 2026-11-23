@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Sākums",
+    "services": "Pakalpojumi",
+    "portfolio": "Darbi",
+    "about": "Par mums",
+    "contact": "Kontakti",
+    "quote": "Saņemt piedāvājumu"
+  },
+  "hero": {
+    "badge": "Tīmekļa izstrādes studija",
+    "title1": "Individuāli web risinājumi",
+    "title2": "augošiem uzņēmumiem",
+    "subtitle": "Mēs izstrādājam modernas, ātras mājaslapas un web lietotnes, kas palīdz uzņēmumiem piesaistīt klientus, automatizēt procesus un augt tiešsaistē.",
+    "ctaPrimary": "Saņemt piedāvājumu",
+    "ctaSecondary": "Mūsu darbi",
+    "featuredBadge": "Populārākā SaaS platforma",
+    "liveDemo": "Live Demo",
+    "mockupTitle": "Restorānu pasūtījumu sistēma",
+    "mockupDesc": "QR ēdienkarte, reāllaika virtuves ekrāns (KDS) un ērts administrācijas panelis.",
+    "feat1Label": "QR ēdienkarte",
+    "feat1Val": "Ātrs pasūtījums",
+    "feat2Label": "Virtuves KDS",
+    "feat2Val": "Reāllaikā",
+    "feat3Label": "Admin panelis",
+    "feat3Val": "Pilna kontrole"
+  },
+  "trust": {
+    "t1": "Uz biznesu vērsti risinājumi",
+    "t2": "Modernas un mērogojamas tehnoloģijas",
+    "t3": "Skaidra komunikācija",
+    "t4": "Pastāvīgs tehniskais atbalsts"
+  },
+  "services": {
+    "tag": "Pakalpojumi",
+    "homeTitle": "Mūsu pakalpojumi",
+    "homeSubtitle": "Web risinājumi, kas pielāgoti jūsu uzņēmuma vajadzībām.",
+    "pageTitle": "Ko mēs darām",
+    "pageSubtitle": "Mēs veidojam praktiskus, modernus un mērogojamus web risinājumus maziem un vidējiem uzņēmumiem.",
+    "learnMore": "Uzzināt vairāk",
+    "requestService": "Pieteikt pakalpojumu",
+    "ctaTitle": "Neesat pārliecināts, kurš risinājums vislabāk der jūsu biznesam?",
+    "ctaDesc": "Pastāstiet par saviem mērķiem — mēs ieteiksim efektīvāko un izdevīgāko risinājumu.",
+    "ctaBtn": "Bezmaksas konsultācija",
+    "items": {
+      "web": {
+        "title": "Uzņēmuma mājaslapas",
+        "desc": "Profesionālas, ātras un mobilajām ierīcēm pielāgotas mājaslapas, kas pārstāv jūsu zīmolu un piesaista klientus.",
+        "f1": "Moderns UI/UX dizains",
+        "f2": "Mobilā un planšetdatora versija",
+        "f3": "SEO un ātrdarbības optimizācija"
+      },
+      "ecom": {
+        "title": "Interneta veikali",
+        "desc": "E-komercijas platformas ar preču pārvaldību, drošiem maksājumiem un ērtu iepirkšanās pieredzi.",
+        "f1": "Preču un noliktavas katalogs",
+        "f2": "Karšu un internetbankas maksājumi",
+        "f3": "Pasūtījumu pārvaldības panelis"
+      },
+      "booking": {
+        "title": "Rezervācijas sistēmas",
+        "desc": "Individuāli pieraksta un rezervācijas risinājumi restorāniem, saloniem un pakalpojumu sniedzējiem.",
+        "f1": "Reāllaika pieejamība",
+        "f2": "Automātiski apstiprinājumi",
+        "f3": "Grafiku un darbinieku kontrole"
+      },
+      "custom": {
+        "title": "Individuālas web lietotnes",
+        "desc": "Pielāgotas web sistēmas, SaaS platformas un iekšējie paneļi biznesa procesu automatizācijai.",
+        "f1": "QR pasūtījumi un virtuves KDS",
+        "f2": "Lietotāju lomu administrēšana",
+        "f3": "API un datubāzu integrācija"
+      },
+      "redesign": {
+        "title": "Mājaslapas pārveide (Redesign)",
+        "desc": "Piešķiriet esošajai mājaslapai modernu izskatu, lielāku ātrumu un ērtāku lietošanu.",
+        "f1": "UI/UX modernizācija",
+        "f2": "Ielādes ātruma uzlabošana",
+        "f3": "Mobilās versijas uzlabojumi"
+      },
+      "support": {
+        "title": "Uzturēšana un atbalsts",
+        "desc": "Nodrošiniet savas vietnes drošību, atjauninājumus un nepārtrauktu darbību.",
+        "f1": "Drošība un rezerves kopijas",
+        "f2": "Satura un funkciju papildinājumi",
+        "f3": "Prioritāra kļūdu novēršana"
+      }
+    }
+  },
+  "process": {
+    "tag": "Mūsu process",
+    "title": "Skaidrs un vienkāršs darba process",
+    "subtitle": "No jūsu idejas līdz gatavam risinājumam — process ir caurspīdīgs, efektīvs un bez lieka stresa.",
+    "s1Title": "1. Izpēte",
+    "s1Desc": "Pārrunājam jūsu mērķus, prasības un biznesa idejas.",
+    "s2Title": "2. Plānošana",
+    "s2Desc": "Definējam darba apjomu, galvenās funkcijas un termiņus.",
+    "s3Title": "3. Dizains un izstrāde",
+    "s3Desc": "Veidojam dizainu, programmējam un regulāri rādām progresu.",
+    "s4Title": "4. Palaišana",
+    "s4Desc": "Rūpīgi notestējam un palaižam jūsu risinājumu tiešsaistē.",
+    "s5Title": "5. Atbalsts",
+    "s5Desc": "Nodrošinām tehnisko uzturēšanu un palīdzību arī pēc palaišanas."
+  },
+  "portfolio": {
+    "tag": "Mūsu darbi",
+    "title": "Portfolio",
+    "subtitle": "Reālu sistēmu, web lietotņu un digitālo risinājumu piemēri augošiem uzņēmumiem.",
+    "buildSimilar": "Izveidot līdzīgu →",
+    "cats": {
+      "all": "Visi",
+      "websites": "Mājaslapas",
+      "apps": "Web lietotnes",
+      "ecom": "E-komercija",
+      "booking": "Rezervācijas"
+    }
+  },
+  "about": {
+    "tag": "Par mums",
+    "title": "Mērķtiecīga studija ar lielu ietekmi uz jūsu biznesu",
+    "p1": "Next Layer ir Rīgā bāzēta tīmekļa izstrādes studija, kas veido praktiskas, augstas kvalitātes mājaslapas un individuālas web lietotnes maziem un vidējiem uzņēmumiem.",
+    "p2": "Mēs ticam tīram dizainam, uzticamām tehnoloģijām un skaidrai komunikācijai bez liekām aģentūras izmaksām. Neatkarīgi no tā, vai jums nepieciešama uzņēmuma mājaslapa vai pilna restorānu pasūtījumu sistēma, mūsu mērķis ir pārvērst jūsu vajadzības strādājošā digitālā risinājumā.",
+    "cta": "Sadarboties ar mums",
+    "cardTitle": "Radīts Baltijas un Eiropas uzņēmumiem",
+    "cardDesc": "Strādājot Rīgā, Latvijā, mēs izstrādājam daudzvalodu platformas (latviešu, angļu, krievu), kas pielāgotas vietējā tirgus standartiem.",
+    "locLabel": "Atrašanās vieta",
+    "langLabel": "Valodas",
+    "v1Title": "Orientēti uz biznesu",
+    "v1Desc": "Risinājumi, kas novērš darba šķēršļus, ietaupa darbinieku laiku un palielina klientu konversiju.",
+    "v2Title": "Kvalitāte un uzticamība",
+    "v2Desc": "Tīra arhitektūra un modernas tehnoloģijas, kas ļauj sistēmai augt kopā ar jūsu uzņēmumu.",
+    "v3Title": "Ilgtermiņa atbalsts",
+    "v3Desc": "Mēs paliekam ar jums arī pēc projekta palaišanas — nodrošinot atjauninājumus un uzlabojumus."
+  },
+  "contact": {
+    "tag": "Kontakti",
+    "title": "Izveidosim ko lielisku kopā",
+    "subtitle": "Ir ideja projektam? Pastāstiet par saviem mērķiem, un mēs sagatavosim skaidru plānu un izmaksu piedāvājumu.",
+    "emailLabel": "E-pasts",
+    "locLabel": "Atrašanās vieta",
+    "respLabel": "Atbildes laiks",
+    "respVal": "Parasti 1 darba dienas laikā",
+    "formTitle": "Nosūtīt projekta pieprasījumu",
+    "nameLabel": "Jūsu vārds",
+    "emailInputLabel": "E-pasta adrese",
+    "typeLabel": "Projekta veids",
+    "typePlaceholder": "Izvēlieties pakalpojumu",
+    "detailsLabel": "Projekta apraksts",
+    "detailsPlaceholder": "Pastāstiet par savu projektu, mērķiem un vēlamajām funkcijām...",
+    "submit": "Nosūtīt pieprasījumu",
+    "successTitle": "Pieprasījums saņemts!",
+    "successDesc": "Paldies! Esam saņēmuši jūsu ziņu un sazināsimies 1 darba dienas laikā.",
+    "sendAnother": "Nosūtīt vēl vienu ziņu"
+  },
+  "footer": {
+    "tagline": "Individuāli web risinājumi, rezervāciju platformas un digitālās sistēmas augošiem uzņēmumiem.",
+    "company": "Uzņēmums",
+    "touch": "Sazināties",
+    "rights": "Visas tiesības aizsargātas.",
+    "studio": "Tīmekļa izstrādes un digitālo risinājumu studija"
+  }
+}

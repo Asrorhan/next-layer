@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-slate-50 border-t border-slate-200/80 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,34 +20,34 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-slate-600 max-w-xs leading-relaxed">
-              Custom web solutions, booking platforms, and digital systems built for growing businesses.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-sm font-semibold text-[#0B2545] uppercase tracking-wider mb-4">
-              Company
+              {t('footer.company')}
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link to="/services" className="text-slate-600 hover:text-[#1D56C9] transition-colors">
-                  Services
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
                 <Link to="/portfolio" className="text-slate-600 hover:text-[#1D56C9] transition-colors">
-                  Portfolio
+                  {t('nav.portfolio')}
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-slate-600 hover:text-[#1D56C9] transition-colors">
-                  About Us
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-slate-600 hover:text-[#1D56C9] transition-colors">
-                  Contact
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -53,7 +56,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-sm font-semibold text-[#0B2545] uppercase tracking-wider mb-4">
-              Get in Touch
+              {t('footer.touch')}
             </h3>
             <ul className="space-y-3 text-sm text-slate-600">
               <li className="flex items-center gap-2.5">
@@ -71,8 +74,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Next Layer. All rights reserved.</p>
-          <p>Web Development & Digital Solutions Studio</p>
+          <p>© {new Date().getFullYear()} Next Layer. {t('footer.rights')}</p>
+          <p>{t('footer.studio')}</p>
         </div>
       </div>
     </footer>

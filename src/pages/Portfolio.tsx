@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { ExternalLink, Layers } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-type Category = 'All' | 'Web Applications' | 'Booking' | 'E-commerce' | 'Websites';
+type CategoryKey = 'all' | 'websites' | 'apps' | 'ecom' | 'booking';
 
 interface Project {
   id: string;
   title: string;
-  category: Exclude<Category, 'All'>;
+  categoryKey: Exclude<CategoryKey, 'all'>;
   badge: string;
   description: string;
   tags: string[];
@@ -18,7 +19,7 @@ const projects: Project[] = [
   {
     id: 'restaurant-saas',
     title: 'Restaurant Ordering System (SaaS)',
-    category: 'Web Applications',
+    categoryKey: 'apps',
     badge: 'Live Production System',
     description:
       'Multi-tenant restaurant platform featuring QR table ordering, real-time Kitchen Display System (KDS), live order status tracking, and custom tenant branding.',
@@ -28,7 +29,7 @@ const projects: Project[] = [
   {
     id: 'barber-booking',
     title: 'Barbershop & Salon Booking Platform',
-    category: 'Booking',
+    categoryKey: 'booking',
     badge: 'Live Web App',
     description:
       'Multi-language (EN / LV / RU) appointment booking system with service selection, time-slot scheduling, and an integrated business analytics dashboard.',
@@ -38,7 +39,7 @@ const projects: Project[] = [
   {
     id: 'qr-pager-concept',
     title: 'Smart QR + Pager Queue Solution',
-    category: 'Web Applications',
+    categoryKey: 'apps',
     badge: 'Proposed Industry Concept',
     description:
       'Digital queue and table-notification concept designed for fast-casual restaurants to replace expensive hardware pagers with instant mobile alerts.',
@@ -47,7 +48,7 @@ const projects: Project[] = [
   {
     id: 'gadgets-eshop',
     title: 'Modern Electronics Online Store',
-    category: 'E-commerce',
+    categoryKey: 'ecom',
     badge: 'E-commerce Build',
     description:
       'Responsive multi-language product catalog with category filtering, shopping cart management, and streamlined checkout flow.',
@@ -56,46 +57,46 @@ const projects: Project[] = [
   },
 ];
 
-const categories: Category[] = ['All', 'Websites', 'Web Applications', 'E-commerce', 'Booking'];
+const categoryKeys: CategoryKey[] = ['all', 'websites', 'apps', 'ecom', 'booking'];
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState<Category>('All');
+  const { t } = useTranslation();
+  const [activeCategory, setActiveCategory] = useState<CategoryKey>('all');
 
   const filteredProjects =
-    activeCategory === 'All'
+    activeCategory === 'all'
       ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      : projects.filter((p) => p.categoryKey === activeCategory);
 
   return (
     <div className="bg-linear-to-b from-[#F4F7FC] via-white to-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="max-w-2xl mb-10">
           <span className="text-sm font-semibold text-[#1D56C9]">
-            Our Work
+            {t('portfolio.tag')}
           </span>
           <h1 className="mt-2 text-4xl font-extrabold text-[#0B2545] tracking-tight">
-            Portfolio
+            {t('portfolio.title')}
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-            A selection of real systems, web applications, and digital concepts built for growing businesses.
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
         {/* Category Filter Tabs */}
         <div className="flex flex-wrap gap-2.5 mb-12">
-          {categories.map((cat) => (
+          {categoryKeys.map((key) => (
             <button
-              key={cat}
+              key={key}
               type="button"
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => setActiveCategory(key)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
-                activeCategory === cat
+                activeCategory === key
                   ? 'bg-[#0B2545] text-white'
                   : 'bg-white text-slate-600 border border-slate-200 hover:border-slate-300 hover:text-[#0B2545]'
               }`}
             >
-              {cat}
+              {t(`portfolio.cats.${key}`)}
             </button>
           ))}
         </div>
@@ -107,7 +108,6 @@ export default function Portfolio() {
               key={project.id}
               className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col"
             >
-              {/* Screenshot Placeholder Box (Replace with <img> once you add screenshots to public/images/) */}
               <div className="h-56 bg-linear-to-br from-[#0B2545] via-[#13386B] to-[#1D56C9] p-6 flex flex-col justify-between text-white">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-medium bg-white/15 backdrop-blur-xs px-3 py-1 rounded-full">
@@ -117,14 +117,13 @@ export default function Portfolio() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-wider text-blue-200 mb-1">
-                    {project.category}
+                    {t(`portfolio.cats.${project.categoryKey}`)}
                   </p>
                   <h3 className="text-xl font-bold">{project.title}</h3>
                 </div>
               </div>
 
-              {/* Card Body */}
-              <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+              <div className="p-6 sm:p-8 grow flex flex-col justify-between">
                 <div>
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <h2 className="text-xl font-bold text-[#0B2545]">
@@ -162,7 +161,7 @@ export default function Portfolio() {
                     to="/contact"
                     className="text-xs font-semibold text-[#1D56C9] hover:text-[#0B2545]"
                   >
-                    Build similar →
+                    {t('portfolio.buildSimilar')}
                   </Link>
                 </div>
               </div>
