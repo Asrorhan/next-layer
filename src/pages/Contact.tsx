@@ -1,10 +1,13 @@
 import { useState, type FormEvent } from 'react';
-import { Mail, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,9 +15,52 @@ export default function Contact() {
     details: '',
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+
+    try {
+      const { error: dbError } = await supabase.from('inquiries').insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          project_type: formData.projectType,
+          details: formData.details,
+        },
+      ]);
+
+      if (dbError) console.error('Supabase error:', dbError);
+
+      // Web3Forms orqali Emailga yuborish
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `New Inquiry (${formData.projectType}) — ${formData.name}`,
+          from_name: 'Next Layer Website',
+          name: formData.name,
+          email: formData.email,
+          project_type: formData.projectType,
+          message: formData.details,
+        }),
+      });
+
+      const data = await res.json();
+      if (!data.success) {
+        throw new Error(data.message || 'Failed to send message');
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again or contact via WhatsApp.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -178,12 +224,23 @@ export default function Contact() {
                       />
                     </div>
 
+                    {error && (
+                      <p className="text-sm text-rose-600">{error}</p>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center gap-2 bg-[#0B2545] hover:bg-[#163863] text-white font-medium py-3.5 px-6 rounded-lg transition-colors cursor-pointer"
+                      disabled={loading}
+                      className="w-full inline-flex items-center justify-center gap-2 bg-[#0B2545] hover:bg-[#163863] disabled:opacity-60 text-white font-medium py-3.5 px-6 rounded-lg transition-colors cursor-pointer"
                     >
-                      {t('contact.submit')}
-                      <Send className="w-4 h-4" />
+                      {loading ? (
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                      ) : (
+                        <>
+                          {t('contact.submit')}
+                          <Send className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </form>
                 </>
