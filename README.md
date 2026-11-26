@@ -1,75 +1,37 @@
-# React + TypeScript + Vite
+# Next Layer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Agency website built to present web development, booking system, and restaurant SaaS solutions for small and medium businesses in Latvia.
 
-Currently, two official plugins are available:
+Live demo: [next-layeer.netlify.app](https://next-layeer.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Routing & Localization:** React Router, i18next (English, Latvian, Russian)
+- **Backend & Storage:** Supabase (database for projects & client inquiries, storage for portfolio assets)
+- **Notifications & Hosting:** Web3Forms, Netlify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Main Features
 
-## Expanding the ESLint configuration
+- **Multi-language support:** Instant switching between EN, LV, and RU across all pages.
+- **Dynamic Portfolio:** Fetches case studies and project images directly from Supabase.
+- **Contact & Inquiry Flow:** Saves client requests to a Supabase `inquiries` table and sends instant email notifications via Web3Forms, plus a direct WhatsApp contact button.
+- **Responsive UI:** Built mobile-first with Tailwind CSS and Lucide icons.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone the repository:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+   ```bash
+   git clone [https://github.com/Asrorhan/next-layer.git](https://github.com/Asrorhan/next-layer.git)
+   cd next-layer
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
-```
+   ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+2. npm install
+3. Create a .env file in the root directory and add your keys:
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   VITE_WEB3FORMS_KEY=your_web3forms_access_key
+4. npm run dev
